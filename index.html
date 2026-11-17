@@ -1,0 +1,727 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DEV ACADEMY SCHOOL</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            scroll-behavior: smooth;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            color: #24364b;
+            background: #7ab1de;
+        }
+
+        header {
+    
+        background-color: #102b46;
+        color: #b92b80;
+        padding: 20px 6%;
+        display: flex;
+        justify-content: space-between;
+        flex: wrap;
+        align-items: center;
+        flex-wrap: wrap;
+        position: relative;
+    
+}
+
+    
+
+        
+            
+  header h1 {
+  color: #b92b80;
+  margin: 0 auto;
+  text-align: center;
+  position: static;
+  transform: none;
+  left: auto;
+}
+  
+
+        
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin: 10px;
+            font-weight: bold;
+        }
+
+        nav a:hover {
+            color: #4de0c1;
+        }
+
+        .hero {
+            min-height: 480px;
+            background: linear-gradient(120deg, #302b63, #168c88);
+            color: rgb(233, 220, 229);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            padding: 60px 20px;
+        }
+
+        .hero h1 {
+            font-size: 48px;
+            margin-bottom: 20px;
+        }
+
+        .hero span {
+            color: #ffca61;
+        }
+
+        .hero p {
+            font-size: 18px;
+            margin-bottom: 30px;
+        }
+
+        .btn {
+            display: inline-block;
+            background: #ffca61;
+            color: #0f0C29;
+            padding: 13px 25px;
+            border-radius: 30px;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        section {
+            padding: 65px 8%;
+        }
+
+        .heading {
+            text-align: center;
+            font-size: 32px;
+            color: #0f0C29;
+            margin-bottom: 35px;
+        }
+
+        .about {
+            background:#f5f7ff;
+            text-align: center;
+        }
+
+        .about p {
+            max-width: 800px;
+            margin: auto;
+            line-height: 1.8;
+            color: #333;
+        }
+
+        .cards {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+            gap: 22px;
+        }
+
+        .card {
+            background: white;
+            padding: 28px;
+            text-align: center;
+            border-radius: 15px;
+            border-top:4px solid transparent;
+            box-shadow: 0 5px 18px #00000010;
+            transition: 0.3s;
+        }
+
+        .card:hover {
+            transform: translateY(-8px);
+            box-shadow: 0 12px 25px #00000020;
+            border-top:4px solid #ffca61
+        }
+
+        .card h3 {
+            color: #0f0c29;
+            margin: 15px 0;
+        }
+
+        .card p {
+            line-height: 1.6;
+            color: #444;
+        }
+
+        .icon {
+            font-size: 40px;
+        }
+
+        .achievements {
+            background: #fff8e1;
+        }
+
+        .events {
+            background: rgb(187, 212, 241);
+        }
+
+        .contact {
+            background: #0f0c29;
+            color: rgb(246, 197, 197);
+            text-align: center;
+        }
+
+        .contact h2 {
+            color: #ffca61;
+        }
+
+        .contact p {
+            margin: 12px;
+        }
+
+        form {
+            max-width: 550px;
+            margin: 25px auto;
+        }
+
+        input, textarea {
+            width: 100%;
+            padding: 14px;
+            margin: 10px 0;
+            border: none;
+            border-radius: 8px;
+        }
+
+        textarea {
+            height: 120px;
+        }
+
+        button {
+            background: #ffca61;
+            color: #477a98;
+            border: none;
+            padding: 13px 30px;
+            border-radius: 25px;
+            font-weight: bold;
+            cursor: pointer;
+        }
+
+        footer {
+            background: #091b2b;
+            color: white;
+            text-align: center;
+            padding: 20px;
+        }
+
+        @media(max-width: 768px) {
+            header {
+                flex-direction: column;
+                gap: 15px;
+            }
+
+            nav {
+                text-align: center;
+            }
+
+            nav a {
+                display: inline-block;
+                margin: 7px;
+            }
+
+            .hero h1 {
+                font-size: 35px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- HEADER -->
+    <header>
+        <header style="text-align: center; display: flex; flex-direction: column; align-items: center;"></header>
+        <h1>DEV ACADEMY</h1>
+        <div class="logo-box">
+        </div>
+            </div>
+    
+            <img src="2.jpeg" alt="DEV ACADEMY" style="width: 70px;height: 70px;">
+
+        </div>
+        
+
+        <nav>
+            <a href="#home">Home</a>
+            <a href="#about">About</a>
+            <a href="#classes">Classes</a>
+            <a href="#facilities">Facilities</a>
+            <a href="#teachers">Teachers</a>
+            <a href="#achievements">Achievements</a>
+            <a href="#events">Events</a>
+            <a href="#contact">Contact</a>
+        </nav>
+    </header>
+
+    <!-- HOME -->
+   <div class="hero" id="home">
+    <div>
+        <h1>A School Where Learning <span>Feels Like Home🏡</span></h1>
+        <p>At DEV ACADEMY, we don't teach children what to think. We teach them how to think💕.
+            <br><br>
+            <span style="color: #FFd700; font-weight: bold; font-size: 18px;">LOVED BY KIDS & TRUSTED BY PARENTS💗</span>
+
+                   </p>
+        <a href="#about" class="btn">Come, See Our World🗺️</a>
+    </div>
+</div>
+    
+
+    <!-- ABOUT -->
+<!-- ABOUT US - Unique & Royal -->
+<section id="about" class="about" style="background: linear-gradient(135deg, #fff8e1 0%, #ffffff 100%); padding: 60px 20px; text-align: center; border-radius: 20px; border: 2px solid #ffca61;">
+
+  <h2 style="color: #0f0c29; font-size: 38px; font-weight: 800;">
+    👑 About Our School ✨
+  </h2>
+  <img src="srivi.jpg" alt="DEV ACADEMY SCHOOL BUILDING" width="100%" max width="500px"; border-radius15px; margin:20px auto;display:block;">
+
+  <p style="color: #333; font-size: 18px; line-height: 1.8; max-width: 750px; margin: 20px auto;">
+    We are not just a school <span style="color: #0f0c29; font-weight: bold;">🏫</span> — We are a 
+    <span style="background: #0f0c29; color: #ffca61; padding: 2px 10px; border-radius: 20px;">Kingdom of Dreams 👑</span><br><br>
+    
+    In the heart of <b>Kovilpatti ❤️</b>, we don't just teach <b>ABC...📚</b><br>
+    We build <b>Brains with Values 🧠💛</b> & <b>Hearts with Courage ❤️💪</b><br><br>
+    
+    🎯 Our Formula: <br>
+    <span style="font-size: 22px;">📖 Education + 🤝 Character + 🚀 Future = SUCCESS 🏆</span><br><br>
+    
+    Here, kids don't learn to face the world 🌍<br>
+    The world will learn to face OUR kids! 🔥✨<br><br>
+    
+    <span style="color: #0f0c29; font-weight: 700;">💙 Past la Proud | Present la Powerful | Future la Unstoppable 💛</span>
+  </p>
+
+  <div style="margin-top: 30px; display: flex; justify-content: center; gap: 15px; flex-wrap: wrap;">
+    <span style="background: #0f0c29; color: white; padding: 10px 18px; border-radius: 30px;">🏆 100% Results</span>
+    <span style="background: #ffca61; color: #0f0c29; padding: 10px 18px; border-radius: 30px; font-weight: bold;">🤩 Joyful Learning</span>
+    <span style="background: #0f0c29; color: white; padding: 10px 18px; border-radius: 30px;">🌱 Values First</span>
+  </div>
+
+</section>
+
+    <!-- CLASSES -->
+    <section id="classes">
+        <h2 class="heading">Our Classes</h2>
+
+        <div class="cards">
+
+            <div class="card">
+                <div class="icon">🧸</div>
+                <h3>Kindergarten</h3>
+                <p>A joyful start where little explorers learn through stories,colors,and play,building confidence and curiosityfor life..</p>
+            </div>
+
+            <div class="card">
+                <div class="icon">📚</div>
+                <h3>Primary Classes</h3>
+                <p>Classes I to V - We nuture young thinkers with strong fundamentals, creativity and values that shape their future..</p>
+            </div>
+
+            <div class="card">
+                <div class="icon">🔬</div>
+                <h3>Middle School</h3>
+                <p>Classes VI to VIII- where concepts meets experiments,students discover,questions and grow into independent learners .</p>
+            </div>
+
+            <div class="card">
+                <div class="icon">🎓</div>
+                <h3>High School</h3>
+                <p>Classes IX and X - Focused academic excellence with career guidance to prepare our acheivers for tomorrows challenges.</p>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- FACILITIES -->
+    <section id="facilities" style="background:#8badb3">
+  
+  <div class="cards">
+
+    <div class="card">
+      <img src="lib.jpg" style="width:100%; height:180px; object-fit:cover; border-radius:10px;">
+      <h3>Library</h3>
+      <p>Thousands of books, journals and e-resources for curious young minds.</p>
+    </div>
+
+    <div class="card">
+      <img src="com.jpg" style="width:100%; height:180px; object-fit:cover; border-radius:10px;">
+      <h3>Computer Lab</h3>
+      <p>Future-ready tech space with high-speed systems where students code.</p>
+    </div>
+
+    <div class="card">
+      <img src="sci.jpg" style="width:100%; height:180px; object-fit:cover; border-radius:10px;">
+      <h3>Science Lab</h3>
+      <p>Discover through doing - well-equipped labs where theory turns into practical.</p>
+    </div>
+
+    <div class="card">
+      <img src="play.jpg" style="width:100%; height:180px; object-fit:cover; border-radius:10px;">
+      <h3>Playground</h3>
+      <p>Spacious playground for sports and physical development.</p>
+    </div>
+
+    <div class="card">
+      <img src="audi.jpg" style="width:100%; height:180px; object-fit:cover; border-radius:10px;">
+      <h3>Auditorium</h3>
+      <p>Modern auditorium for events and cultural activities.</p>
+    </div>
+
+    <div class="card">
+      <img src="digi.jpg" style="width:100%; height:180px; object-fit:cover; border-radius:10px;">
+      <h3>Digital Class</h3>
+      <p>Smart classrooms with interactive digital learning.</p>
+    </div>
+
+  </div>
+</section>
+
+
+        
+    
+
+    <!-- TEACHERS -->
+   
+                 <section id="teachers">
+        
+        <!-- TEACHERS - DEV ACADEMY Premium -->
+<section id="teachers">
+    <h2 class="heading">Our Dedicated Mentors</h2>
+    <p style="text-align:center; color:#555; margin-bottom:25px;">Not just teachers — we are mentors shaping futures at DEV ACADEMY</p>
+    
+    <div class="cards">
+
+        <div class="card">
+            <div class="icon">📖</div>
+            <h3>Mrs. Sudha</h3>
+            <p><b>Tamil Mentor</b></p>
+            <p class="sub-para">Keeping our mother tongue alive through stories, poetry, and pride. She makes Tamil fun and powerful.</p>
+        </div>
+
+        <div class="card">
+            <div class="icon">✒️</div>
+            <h3>Mrs. Anitha</h3>
+            <p><b>English Mentor</b></p>
+            <p class="sub-para">From grammar to grand speeches — building fluent speakers and confident writers for the global stage.</p>
+        </div>
+
+        <div class="card">
+            <div class="icon">🔢</div>
+            <h3>Mr. Kumar</h3>
+            <p><b>Mathematics Mentor</b></p>
+            <p class="sub-para">Turning fear of numbers into love for logic. Puzzles, tricks, and real-life maths made easy.</p>
+        </div>
+
+        <div class="card">
+            <div class="icon">🧬</div>
+            <h3>Mrs. Pavithra</h3>
+            <p><b>Science Explorer</b></p>
+            <p class="sub-para">Lab coat on, curiosity on! Where every experiment is a discovery and every child is a scientist.</p>
+        </div>
+
+        <div class="card">
+            <div class="icon">🌍</div>
+            <h3>Mr. Vinoth</h3>
+            <p><b>Social Science Guide</b></p>
+            <p class="sub-para">Connecting history to today, maps to reality. Making the world understandable and exciting.</p>
+        </div>
+
+        <div class="card">
+            <div class="icon">💻</div>
+            <h3>Ms. Keerthi</h3>
+            <p><b>Computer Wizard</b></p>
+            <p class="sub-para">Code, create, innovate! Future-ready tech skills from basics to building apps and AI ideas.</p>
+        </div>
+
+        <div class="card">
+            <div class="icon">🗣️</div>
+            <h3>Mrs. Lakshmi</h3>
+            <p><b>Hindi Mentor</b></p>
+            <p class="sub-para">Bridging languages with joy. Simple, spoken Hindi that connects hearts across India.</p>
+        </div>
+
+        <div class="card">
+            <div class="icon">⚽</div>
+            <h3>Mr. Suresh</h3>
+            <p><b>Sports Champion</b></p>
+            <p class="sub-para">Fitness, discipline, team spirit. Building strong bodies and stronger leaders on our playground.</p>
+        </div>
+
+        <div class="card">
+            <div class="icon">🎨</div>
+            <h3>Mrs. Priya</h3>
+            <p><b>Arts & Creativity Mentor</b></p>
+            <p class="sub-para">Where colors speak and ideas shine. Drawing, craft, and creativity that brings imagination to life.</p>
+        </div>
+
+        <div class="card">
+            <div class="icon">🌟</div>
+            <h3>Mr. Arjun</h3>
+            <p><b>Life Skills Coach</b></p>
+            <p class="sub-para">Moral values, GK, and career guidance. Shaping good humans before great achievers.</p>
+        </div>
+
+    </div>
+</section>
+
+<style>
+#teachers .cards{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 22px;
+    padding: 20px;
+}
+#teachers .card{
+    background: #fff;
+    border-radius: 18px;
+    padding: 22px 15px;
+    text-align: center;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+    border: 1px solid #eef4ef;
+    transition: 0.3s;
+}
+#teachers .card:hover{
+    transform: translateY(-6px);
+    box-shadow: 0 10px 20px rgba(0,0,0,0.12);
+}
+#teachers .icon{ font-size: 32px; margin-bottom: 8px;}
+#teachers .card h3{ color: #14532d; margin: 5px 0; }
+#teachers .card b{ color: #1a7a45; }
+#teachers .sub-para{ font-size: 12.5px; color: #666; margin-top: 8px; line-height: 1.4; }
+</style>
+            
+                
+
+        </div>
+    </section>
+
+    <!-- ACHIEVEMENTS -->
+    <section class="achievements" id="achievements">
+        
+
+       <!-- ACHIEVEMENTS - 8 CARDS DEV ACADEMY -->
+<section id="achievements" style="background: #f0f8f2; padding: 50px 20px;">
+    <h2 class="heading" style="text-align:center;">Our Achievements</h2>
+    <p style="text-align:center; color:#555; margin-bottom:30px;">Celebrating excellence at DEV ACADEMY — Every child shines!</p>
+    
+    <div class="achieve-grid">
+
+        <div class="achieve-card">
+            <div class="icon">🏆</div>
+            <h3>Academic Excellence</h3>
+            <p>100% results with state-level toppers. Our students prove brilliance with discipline and dedication every year.</p>
+        </div>
+
+        <div class="achieve-card">
+            <div class="icon">🥇</div>
+            <h3>Sports Champions</h3>
+            <p>District-level gold medals in athletics and football. Fitness and winning spirit run in our playground.</p>
+        </div>
+
+        <div class="achieve-card">
+            <div class="icon">🌟</div>
+            <h3>Creative Talents</h3>
+            <p>Art, dance, and music awards at inter-school fests. We nurture artists who paint dreams into reality.</p>
+        </div>
+
+        <div class="achieve-card">
+            <div class="icon">💻</div>
+            <h3>Tech Innovators</h3>
+            <p>Young coders winning in coding hackathons and science expos. Building tomorrow's apps today!</p>
+        </div>
+
+        <div class="achieve-card">
+            <div class="icon">🎤</div>
+            <h3>Public Speaking Stars</h3>
+            <p>Debate and elocution champions — our students speak with confidence and lead with words.</p>
+        </div>
+
+        <div class="achieve-card">
+            <div class="icon">🌱</div>
+            <h3>Eco Warriors</h3>
+            <p>Best Green School award for cleanliness and tree plantation drive. Learning to care for our Earth.</p>
+        </div>
+
+        <div class="achieve-card">
+            <div class="icon">📚</div>
+            <h3>Olympiad Winners</h3>
+            <p>Medals in Maths & Science Olympiads at national level. Our logic mentors create national champions.</p>
+        </div>
+
+        <div class="achieve-card">
+            <div class="icon">🤝</div>
+            <h3>Community Heroes</h3>
+            <p>Recognised for social service and helping hands. At DEV ACADEMY, we build good humans first.</p>
+        </div>
+
+    </div>
+</section>
+
+<style>
+.achieve-grid{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+    gap: 20px;
+}
+.achieve-card{
+    background: white;
+    border-radius: 16px;
+    padding: 20px;
+    text-align: center;
+    box-shadow: 0 3px 10px rgba(0,0,0,0.07);
+    border-left: 4px solid #1a7a45;
+    transition: 0.3s;
+}
+.achieve-card:hover{
+    transform: translateY(-5px);
+    border-left: 4px solid #f0a500;
+}
+.achieve-card .icon{ font-size: 30px; margin-bottom: 10px; }
+.achieve-card h3{ font-size: 16px; color: #14532d; margin-bottom: 8px; }
+.achieve-card p{ font-size: 12.5px; color: #666; line-height: 1.5; }
+</style>
+        </div>
+    </section>
+
+    <!-- EVENTS -->
+    <section class="events" id="events">
+        <h2 style="text-align: center;"color: #0f0c29;>
+            Learning beyond books,Every day is special
+
+        
+
+        <div class="cards">
+
+           <!-- SCHOOL EVENTS - 10 UNIQUE DEV ACADEMY -->
+<!-- DEV ACADEMY EVENTS - UNIQUE WITH EMOJI -->
+<div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 20px; padding: 20px;">
+
+  <!-- Card 1 -->
+  <div style="background: white; border: 2px solid #ffca61; border-radius: 16px; padding: 25px 15px; text-align: center;">
+    <div style="font-size: 40px;">🎉</div>
+    <h3 style="color: #0f0c29; margin: 10px 0;">UTSAV</h3>
+    <p style="color: #444; font-size: 14px;">Our grand stage of talents. Where dance 💃, drama 🎭, and dreams ✨ come alive with 100% student participation! 🌟</p>
+  </div>
+
+  <!-- Card 2 -->
+  <div style="background: white; border: 2px solid #ffca61; border-radius: 16px; padding: 25px 15px; text-align: center;">
+    <div style="font-size: 40px;">🇮🇳</div>
+    <h3 style="color: #0f0c29; margin: 10px 0;">INDEPENDENCE DAY</h3>
+    <p style="color: #444; font-size: 14px;">Saluting Tiranga with pride! 🎖️ March past, patriotic songs 🎤, and young voices for a stronger India! 💙</p>
+  </div>
+
+  <!-- Card 3 -->
+  <div style="background: white; border: 2px solid #ffca61; border-radius: 16px; padding: 25px 15px; text-align: center;">
+    <div style="font-size: 40px;">🌳</div>
+    <h3 style="color: #0f0c29; margin: 10px 0;">GREENY DAY</h3>
+    <p style="color: #444; font-size: 14px;">Each child plants a future 🌱 Tree plantation, clean drive 🧹, and pledge to protect our Mother Earth 🌍!</p>
+  </div>
+
+  <!-- Card 4 -->
+  <div style="background: white; border: 2px solid #ffca61; border-radius: 16px; padding: 25px 15px; text-align: center;">
+    <div style="font-size: 40px;">🎈</div>
+    <h3 style="color: #0f0c29; margin: 10px 0;">CHILDREN'S DAY</h3>
+    <p style="color: #444; font-size: 14px;">Fun, games, and laughter unlimited 😂 Teachers perform for students — a day made only for joy! 🥳</p>
+  </div>
+
+  <!-- Card 5 -->
+  <div style="background: white; border: 2px solid #ffca61; border-radius: 16px; padding: 25px 15px; text-align: center;">
+    <div style="font-size: 40px;">🏅</div>
+    <h3 style="color: #0f0c29; margin: 10px 0;">SPORTS DAY</h3>
+    <p style="color: #444; font-size: 14px;">Run, jump, win! 🏃 A day of energy ⚡, team spirit 🤝, and champions rising on our playground! 🏆</p>
+  </div>
+
+  <!-- Card 6 -->
+  <div style="background: white; border: 2px solid #ffca61; border-radius: 16px; padding: 25px 15px; text-align: center;">
+    <div style="font-size: 40px;">📚</div>
+    <h3 style="color: #0f0c29; margin: 10px 0;">BOOK DAY</h3>
+    <p style="color: #444; font-size: 14px;">A thousand stories, one library 📖 Book talks, author meets ✍️, and reading that sparks imagination! 💡</p>
+  </div>
+
+  <!-- Card 7 -->
+  <div style="background: white; border: 2px solid #ffca61; border-radius: 16px; padding: 25px 15px; text-align: center;">
+    <div style="font-size: 40px;">🎨</div>
+    <h3 style="color: #0f0c29; margin: 10px 0;">ART DAY</h3>
+    <p style="color: #444; font-size: 14px;">Colors, crafts, and creativity blast 💥 Every wall becomes a canvas for our little artists 🖌️!</p>
+  </div>
+
+  <!-- Card 8 -->
+  <div style="background: white; border: 2px solid #ffca61; border-radius: 16px; padding: 25px 15px; text-align: center;">
+    <div style="font-size: 40px;">🤖</div>
+    <h3 style="color: #0f0c29; margin: 10px 0;">TECH DAY</h3>
+    <p style="color: #444; font-size: 14px;">From typing to AI! 💻 Coding contests ⌨️, typing speed, and digital creations by our future techies! 🚀</p>
+  </div>
+
+</div>
+
+    </div>
+</section>
+
+<style>
+.events-grid{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 20px;
+}
+.event-card{
+    background: #ebf4ef;
+    border-radius: 16px;
+    padding: 22px 15px;
+    text-align: center;
+    border: 4px solid #ffca61;
+    box-shadow: 0 3px 10px rgba(0,0,0,0.05);
+    transition: 0.3s;
+}
+.event-card:hover{
+    background: white;
+    transform: translateY(-5px);
+    box-shadow: 0 8px 18px rgba(0,0,0,0.1);
+}
+.event-card .icon{ font-size: 32px; margin-bottom: 10px; }
+.event-card h3{ font-size: 15px; color: #eff5f8; margin-bottom: 8px; }
+.event-card p{ font-size: 12.5px; color: #666; line-height: 1.5; }
+</style>
+
+        </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section class="contact" id="contact">
+        <h2 class="heading">Contact Our School</h2>
+
+        <p>📍 Address: 12/4,Rajiv Gandhi nagar,srivilliputhur,Virudhunagar.</p>
+        <p>📞 Phone: +91 98765 43210</p>
+        <p>✉ Email: info@dev academy.edu</p>
+
+        <form onsubmit="event.preventDefault(); alert('Thank you! Your enquiry has been received in this demo.');">
+
+            <input type="text" placeholder="Your Name" required>
+
+            <input type="email" placeholder="Your Email" required>
+
+            <input type="tel" placeholder="Your Phone Number" required>
+
+            <textarea placeholder="Your Message" required></textarea>
+
+            <button type="submit">Submit</button>
+
+        </form>
+    </section>
+
+    <!-- FOOTER -->
+    <footer>
+        <p>© 2026 DEV ACADEMY SCHOOL. All Rights Reserved.</p>
+        <p>Learn • Grow • Lead</p>
+    </footer>
+
+</body>
+</html>
+
